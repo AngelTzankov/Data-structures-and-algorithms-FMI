@@ -24,6 +24,10 @@ are also present after the rearrangement. If we perform
 such manipulation in linear time the answer to the problem
 will be the 1 + the first index in the array that does not
 contains a number not equal to the index + 1.
+
+Time complexity - O(n)
+Space complexity - O(1), where n is the length of the array
+we input.
 */
 int getAnswer(int arrLen, int* arr)
 {

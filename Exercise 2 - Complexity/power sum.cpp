@@ -57,7 +57,7 @@ void generatePowerSum(int x, int n, int last)
 int main()
 {
     int x, n;
-    scanf("%d %d", &x, &n)
+    scanf("%d %d", &x, &n);
     generatePowerSum(x, n, 0);
     printf("%d\n", ans);
 }

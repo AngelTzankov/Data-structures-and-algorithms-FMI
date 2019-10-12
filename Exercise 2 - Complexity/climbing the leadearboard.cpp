@@ -17,6 +17,11 @@ find which position it would take.
 !!!Note that binary search has not yet been taken
 in lectures so it will not be needed for any homework
 or test before it is talked about in lectures.
+
+Time complexity - O(n+m*log2(n))
+Space complexity - O(n+m), where n is the size of
+the results array and m is the size of the array with
+the scores of Alice.
 */
 int getPlace(int x)
 {
@@ -56,8 +61,9 @@ int main()
     scanf("%d", &n);
     for(int i=0;i<n;++i)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", &results[i]);
     }
+    calculatePositions();
     scanf("%d", &m);
     for(int i=0;i<m;++i)
     {

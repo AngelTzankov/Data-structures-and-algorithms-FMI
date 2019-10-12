@@ -25,6 +25,10 @@ can have an array with length 26 that contains the count of
 occurrences of every letter in the word where the occurrences of
 'a' are at index 0, the occurrences of 'b' are at index 1 and
 so on.
+
+Time complexity - O(n)
+Space complexity - O(n), where n is the length of the string we
+input.
 */
 int main()
 {

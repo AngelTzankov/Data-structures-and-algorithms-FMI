@@ -15,6 +15,10 @@ Otherwise it the string is a palindrome
 when and only when its first and last
 characters are equal and the string between
 them is also a palindrome.
+
+Time complexity - O(n)
+Space complexity - O(n), where n is
+the length of string we input
 */
 bool isPalindrome(char* str, int len)
 {
