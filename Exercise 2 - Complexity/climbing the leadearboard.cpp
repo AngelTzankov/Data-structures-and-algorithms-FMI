@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-int n, m, res[200000], alice[200000], pos[200000];
+
+int n, m, res[200000], aliceScores[200000], pos[200000];
 
 int getPlace(int x)
 {
@@ -19,13 +19,8 @@ int getPlace(int x)
         return pos[r]+1;
 }
 
-int main()
+void calculatePositions()
 {
-    cin>>n;
-    for(int i=0;i<n;++i)
-    {
-        cin>>res[i];
-    }
     int currentPosition = 1;
     pos[0] = 1;
     for(int i=1;i<n;++i)
@@ -39,10 +34,19 @@ int main()
             pos[i] = ++currentPosition;
         }
     }
-    cin>>m;
+}
+
+int main()
+{
+    scanf("%d", &n);
+    for(int i=0;i<n;++i)
+    {
+        scanf("%d", &arr[i]);
+    }
+    scanf("%d", &m);
     for(int i=0;i<m;++i)
     {
-        cin>>alice[i];
-        cout<<getPlace(alice[i])<<endl;
+        scanf("%d", &aliceScores[i]);
+        printf("%d\n", getPlace(aliceScores[i]));
     }
 }
