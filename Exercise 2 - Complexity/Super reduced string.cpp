@@ -1,12 +1,13 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 /*
 Problem statement: https://www.hackerrank.com/challenges/reduced-string/problem?h_r=internal-search
 */
 
 /*
-Solution idea: Iterate the string adding every letter
-to the answer string and if the latter has two consecutive
+Solution
+Iterate the string adding every letter to the
+answer string and if the latter has two consecutive
 letters at any point remove the last two letters and continue.
 
 This problem can also be solved very easily with a stack.

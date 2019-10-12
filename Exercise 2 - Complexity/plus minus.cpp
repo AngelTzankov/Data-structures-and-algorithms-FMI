@@ -1,6 +1,4 @@
-#include <iostream>
-#include <iomanip>
-#include <cstdio>
+#include <bits/stdc++.h>
 using namespace std;
 /*
 Problem statement: https://www.hackerrank.com/challenges/plus-minus/problem?h_r=internal-search

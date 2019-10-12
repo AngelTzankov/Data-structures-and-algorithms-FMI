@@ -32,7 +32,7 @@ int fastPow(int x, int power)
 }
 
 /*
-SOLUTION ANALYSIS
+Solution
 The idea here is simple. the function generates
 all the sums of distinct powers of n and counts
 the ones that equal x.

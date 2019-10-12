@@ -1,5 +1,4 @@
-#include <cstdio>
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 /*
 This problem was asked by Stripe.
@@ -16,7 +15,7 @@ int arr[1000000];
 
 
 /*
-SOLUTION ANALYSIS
+Solution
 The idea behind the solution is as follows:
 Rearrange the array so that every positive number
 x is located in the element of the array with index

@@ -7,7 +7,8 @@ Problem statement: https://www.hackerrank.com/challenges/game-of-thrones/problem
 int letterUsage[26];
 
 /*
-Solution: For this problem we need to make the observation
+Solution
+For this problem we need to make the observation
 that if the count of occurrences for every letter in the
 word is an even number the word can obviously be rearranged
 so that it is a palindrome with even length. If there is only

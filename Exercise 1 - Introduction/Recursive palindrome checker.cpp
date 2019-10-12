@@ -1,6 +1,4 @@
-#include <cstdio>
-#include <cstring>
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 /*
 PROBLEM STATEMENT
@@ -9,7 +7,7 @@ a given word is a palindrome.
 */
 
 /*
-SOLUTION ANALYSIS
+Solution
 The idea of the function is as follows:
 If the string has length of one or zero
 then it is a palindrome by definition.
