@@ -1,0 +1,4 @@
+https://www.hackerrank.com/challenges/quicksort1/problem
+https://www.hackerrank.com/challenges/find-the-median/problem
+https://www.hackerrank.com/challenges/closest-numbers/problem
+https://www.hackerrank.com/challenges/lilys-homework/problem
