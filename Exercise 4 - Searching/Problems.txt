@@ -1,0 +1,6 @@
+Problem 1: Find the first occurrence of x in sorted array with n elements.
+Problem 2: Find the last occurrence of x in sorted array with n elements.
+Problem 3: Find if there are two elements with difference x in an array with n elements.
+Problem 4: https://www.hackerrank.com/challenges/pairs/problem
+Problem 5: https://www.hackerrank.com/challenges/hackerland-radio-transmitters/problem
+Problem 6: https://judge.openfmi.net/practice/get_problem_description?contest_id=153&problem_id=468
