@@ -1,0 +1,6 @@
+1 Check if a given linked list has a loop.
+2 Given 2 nodes of linked lists check if the two linked lists merge
+3 Given a sequence of braces. Determine if the sequence is valid(if every opening brace is closed somewhere in the sequence).
+Example of valid sequence: ((())())
+Example of invalid sequence: ())()(
+4 Implement stack with O(1) time an space complexity for : push, pop and finding the max element.
