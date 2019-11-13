@@ -34,10 +34,7 @@ int main()
 {
     Stack stack;
     int n, a;
-    int g(int x)
-    {
-        return 1;
-    };
+
     cin>>n;
     for(int i=0; i<n; ++i)
     {
