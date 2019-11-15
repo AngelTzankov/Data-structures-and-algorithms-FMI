@@ -77,8 +77,9 @@ struct BST
         {
             if(curNode->left == NULL)
             {
+                Node* tmp = curNode->right;
                 delete curNode;
-                return curNode->right;
+                return tmp;
             }
             Node* maxInLeftSubTree = curNode->left;
             while(maxInLeftSubTree->right != NULL)
