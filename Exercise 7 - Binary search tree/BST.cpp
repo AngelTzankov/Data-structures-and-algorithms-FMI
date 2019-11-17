@@ -32,11 +32,6 @@ private:
 
     Node* insert(Node *curNode, int value)
     {
-        if(this->root == NULL)
-        {
-            this->root = new Node(value);
-            return this->root;
-        }
         if(curNode == NULL)
         {
             return new Node(value);
@@ -74,11 +69,7 @@ private:
                 delete curNode;
                 return tmp;
             }
-            Node* maxInLeftSubTree = curNode->left;
-            while(maxInLeftSubTree->right != NULL)
-            {
-                maxInLeftSubTree = maxInLeftSubTree->right;
-            }
+            Node* maxInLeftSubTree = findMax(curNode->left);
             curNode->value = maxInLeftSubTree->value;
             curNode->left = remove(curNode->left, curNode->value);
         }
@@ -124,13 +115,13 @@ private:
         {
             return root;
         }
-        else if(root->value > value)
+        else if(root->value < value)
         {
-            return lowerBound(root->left, value);
+            return lowerBound(root->right, value);
         }
         else
         {
-            Node* tmp = lowerBound(root->right, value);
+            Node* tmp = lowerBound(root->left, value);
             if(tmp != NULL)
                 return tmp;
             else
@@ -192,4 +183,6 @@ int main()
 {
 
 }
+
+
 
