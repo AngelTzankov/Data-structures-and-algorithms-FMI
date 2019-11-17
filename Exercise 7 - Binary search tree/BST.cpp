@@ -14,16 +14,11 @@ struct Node
     }
 };
 
-struct BST
+class BST
 {
-    Node* root = NULL;
+private:
+    Node* root;
 
-    Node* getRoot()
-    {
-        return root;
-    }
-
-    //tested
     Node* find(Node* curNode, int value)
     {
         if(curNode == NULL)
@@ -35,7 +30,6 @@ struct BST
          return find(curNode->left, value);
     }
 
-    //tested
     Node* insert(Node *curNode, int value)
     {
         if(this->root == NULL)
@@ -58,7 +52,6 @@ struct BST
         return curNode;
     }
 
-    //tested
     Node* remove(Node* curNode, int value)
     {
         if(curNode == NULL)
@@ -92,7 +85,6 @@ struct BST
         return curNode;
     }
 
-    //tested
     void printSorted(Node *root)
     {
         if(root == NULL)
@@ -104,7 +96,6 @@ struct BST
         printSorted(root->right);
     }
 
-    //tested
     Node* findMax(Node *root)
     {
         if(root->right != NULL)
@@ -114,7 +105,6 @@ struct BST
         return root;
     }
 
-    //tested
     Node* findMin(Node *root)
     {
         if(root->left != NULL)
@@ -124,37 +114,82 @@ struct BST
         return root;
     }
 
-    //tested
     Node* lowerBound(Node* root, int value)
     {
         if(root == NULL)
         {
             return NULL;
         }
-
-        if(root->value > value)
+        else if(root->value == value)
+        {
+            return root;
+        }
+        else if(root->value > value)
         {
             return lowerBound(root->left, value);
         }
         else
         {
-            if(root->right == NULL)
-            {
+            Node* tmp = lowerBound(root->right, value);
+            if(tmp != NULL)
+                return tmp;
+            else
                 return root;
-            }
-            if(root->right->value <= value)
-            {
-                return lowerBound(root->right, value);
-            }
-            if(root->value <= value)
-                return root;
-            return NULL;
         }
-        return NULL;
     }
+
+public:
+    BST()
+    {
+        root = NULL;
+    }
+    void insert(int value)
+    {
+        if(root == NULL)
+        {
+            root = new Node(value);
+        }
+        else
+        {
+            insert(root, value);
+        }
+    }
+    void remove(int value)
+    {
+        remove(root, value);
+    }
+    bool exists(int value)
+    {
+        return find(root, value) != NULL;
+    }
+    int findMin()
+    {
+        if(root == NULL)
+            return -1;
+        return findMin(root)->value;
+    }
+    int findMax()
+    {
+        if(root == NULL)
+            return -1;
+        return findMax(root)->value;
+    }
+    int lowerBound(int value)
+    {
+        Node* lb = lowerBound(root, value);
+        if(lb == NULL)
+            return -1;
+        else return lb->value;
+    }
+    void printSorted()
+    {
+        printSorted(root);
+    }
+
 };
 
 int main()
 {
 
 }
+
