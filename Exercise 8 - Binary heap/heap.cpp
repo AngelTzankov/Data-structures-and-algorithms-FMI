@@ -50,8 +50,8 @@ private:
         {
             if(arr[idx] > arr[parent(idx)])
             {
-                swap(arr[idx], arr[idx/2]);
-                idx = idx/2;
+                swap(arr[idx], arr[parent(idx)]);
+                idx = parent(idx);
             }
             else
                 break;
