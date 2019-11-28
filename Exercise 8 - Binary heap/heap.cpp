@@ -134,11 +134,5 @@ public:
 
 int main()
 {
-    int a[5] = {1, 2, 3, 4, 5};
-    Heap* heap = new Heap(a, 5);
-    for(int i=0;i<5;++i)
-    {
-        cout<<heap->top()<<endl;
-        heap->pop();
-    }
+
 }
