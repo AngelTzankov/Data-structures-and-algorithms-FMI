@@ -79,7 +79,7 @@ private:
         while(idx > 0)
         {
             int maxValueChild = idx;
-            if(hasRightChild(idx)  && arr[leftChild(idx)] > arr[rightChild(idx)])
+            if(hasRightChild(idx) && arr[leftChild(idx)] > arr[rightChild(idx)])
                 maxValueChild = rightChild(idx);
             if(hasLeftChild(idx) && arr[maxValueChild] > arr[idx])
             {
@@ -106,7 +106,7 @@ public:
         {
             this->arr.push_back(arr[i]);
         }
-        for(int i=n/2-1;i>=0;++i)
+        for(int i=n/2-1;i>=0;--i)
         {
             heapifyIterative(i);
         }
