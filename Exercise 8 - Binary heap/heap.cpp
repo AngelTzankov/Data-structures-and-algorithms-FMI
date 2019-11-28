@@ -102,13 +102,14 @@ public:
     ///Next time I may prove it if someone is interested.
     Heap(int* arr, int n)
     {
+        heapSize = n;
         for(int i=0;i<n;++i)
         {
             this->arr.push_back(arr[i]);
         }
         for(int i=n/2-1;i>=0;--i)
         {
-            heapifyIterative(i);
+            heapify(i);
         }
     }
 
@@ -133,5 +134,11 @@ public:
 
 int main()
 {
-
+    int a[5] = {1, 2, 3, 4, 5};
+    Heap* heap = new Heap(a, 5);
+    for(int i=0;i<5;++i)
+    {
+        cout<<heap->top()<<endl;
+        heap->pop();
+    }
 }
