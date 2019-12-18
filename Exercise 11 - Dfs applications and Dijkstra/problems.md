@@ -11,4 +11,4 @@ given nodes.
 
 ***Problem 5:*** https://judge.openfmi.net/practice/get_problem_description?contest_id=156&problem_id=486
 
-***Problem 6:*** Given a weighted directed aciclyc graph G with *n* nodes and *m* edges and two nodes *x* and *y*. Find the shortest path from *x* to *y*. (What if you had to find the longest) 
+***Problem 6:*** Given a weighted directed aciclyc graph G with *n* nodes and *m* edges and two nodes *x* and *y*. Find the shortest path from *x* to *y*. What if you had to find the longest one?
