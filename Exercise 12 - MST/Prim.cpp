@@ -28,13 +28,8 @@ int mst(int start)
     }
     nodeCost[start] = 1;
     pq.push({start, start, 0});
-    for(int i=0;i<n;++i) {
-        if(pq.empty())
-        {
-            cout<<"No mst!"<<endl;
-            return -1;
-        }
-
+    while(!pq.empty())
+    {
         Edge x = pq.top();
         pq.pop();
         int u = x.to;
@@ -69,6 +64,7 @@ int main()
         g[from-1].weights.push_back(w);
         g[to-1].weights.push_back(w);
     }
-
-    cout<<mst(0)<<endl;
+    int start;
+    cin>>start;
+    cout<<mst(start-1)<<endl;
 }
