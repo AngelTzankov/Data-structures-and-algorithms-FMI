@@ -4,3 +4,4 @@
 Example of valid sequence: ((())())
 Example of invalid sequence: ())()(
 4 Implement stack with O(1) time an space complexity for : push, pop and finding the max element.
+https://www.hackerrank.com/contests/sda-hw-5-2023/challenges/challenge-3105/copy-from/1369838632
